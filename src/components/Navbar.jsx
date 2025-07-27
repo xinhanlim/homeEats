@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="w-full px-4 py-2 bg-[#4B3832] shadow-md lg:px-2 lg:py-3  playfair-display-h1">
+            <nav className="absolute w-full px-4 py-2 bg-[#4B3832] lg:px-2 lg:py-3  playfair-display-h1">
                 <div className="container flex flex-wrap mx-auto items-center justify-between mt-4 mb-4 ">
                     <a href="#" className="mr-10 text-[#EEEFE0] block py-1.5 text-2xl font-semibold">
                         Caffè Noire
@@ -69,7 +69,7 @@ export default function Navbar() {
             </nav>
 
             {/* Hamburger DropDown */}
-            <div className={`lg:hidden bg-[#EEEFE0] transition-all duration-300 overflow-hidden ${isHam ? 'max-h-60 py-4' : 'max-h-0 py-0'}`}>
+            <div className={`absolute top-24 w-full lg:hidden bg-[#EEEFE0] transition-all duration-300 overflow-hidden ${isHam ? 'max-h-60 py-4' : 'max-h-0 py-0'}`}>
                 <div className="flex flex-col gap-3 px-4">
                     <a href='#'
                         onClick={() => {
