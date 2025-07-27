@@ -44,7 +44,7 @@ export default function Navbar() {
                 </div>
             </nav>
             <div
-                className={`w-full bg-[#4B3832] transition-all duration-300 overflow-hidden ${isSearch ? 'max-h-40 py-6' : 'max-h-0 py-0'}`}>
+                className={`w-full bg-transparent transition-all duration-300 overflow-hidden ${isSearch ? 'max-h-40 py-6' : 'max-h-0 py-0'}`}>
                 <div className="container mx-auto flex justify-center">
                     <div className="playfair-display-h1 flex items-center w-full mx0-auto bg-[#EEEFE0] rounded-full shadow-md px-4 py-3">
                         <input type="text"
