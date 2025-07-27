@@ -1,3 +1,4 @@
+import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
 
 export default function App(){
@@ -6,6 +7,7 @@ export default function App(){
   <>
 
     <Navbar/>
+    <HeroSection/>
   
   </>
   )
