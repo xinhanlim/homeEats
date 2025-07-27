@@ -2,10 +2,9 @@ import Navbar from './components/Navbar'
 
 export default function App(){
   
-  return(<>
+  return(<div className="bg-[#EEEFE0]">
 
     <Navbar/>
-    <h1 className="text-3xl font-bold underline">Hello World</h1>
   
-  </>)
+  </div>)
 }
