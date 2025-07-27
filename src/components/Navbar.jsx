@@ -69,7 +69,7 @@ export default function Navbar() {
             </nav>
 
             {/* Hamburger DropDown */}
-            <div className={`absolute top-24 w-full lg:hidden bg-[#EEEFE0] transition-all duration-300 overflow-hidden ${isHam ? 'max-h-60 py-4' : 'max-h-0 py-0'}`}>
+            <div className={`absolute top-24 w-full lg:hidden bg-transparent transition-all duration-300 overflow-hidden ${isHam ? 'max-h-60 py-4' : 'max-h-0 py-0'}`}>
                 <div className="flex flex-col gap-3 px-4">
                     <a href='#'
                         onClick={() => {
