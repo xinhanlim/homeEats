@@ -17,3 +17,6 @@ It took me awhile looking at my notes from school how useState works.
 so isSetSearch is a handle for us to change the state of isSearch, having it to be false at first.
 when i click on search, isSetSearch(!isSearch) will run and change false to true.
 and thus rending the max-h-40 and when u click search again , isSetSearch(!isSearch) runs again and change true to false causing it to max-h-0
+
+Photo Reference :
+1. https://unsplash.com/photos/a-bunch-of-coffee-beans-on-a-table-2plzoLJe8jM - Hero Section
