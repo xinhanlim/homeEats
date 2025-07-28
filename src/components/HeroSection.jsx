@@ -1,7 +1,7 @@
 export default function HeroSection() {
     return (
         <>
-            <div className="relative z-10 px-4 w-screen h-[45vh] overflow-hidden ">
+            <div className="relative z-10 px-4 w-screen h-[50vh] overflow-hidden ">
                 {/* <img className="absolute w-full h-full object-cover  " src={SectionImg} alt="photo of coffee" /> */}
                 <div className="z-20 relative flex inset-0">
                     <div className="container mx-auto py-40 justify-start ">

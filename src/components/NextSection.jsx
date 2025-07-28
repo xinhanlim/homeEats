@@ -6,11 +6,11 @@ export default function HeroSection() {
             </div> */}
             <div className="container mx-auto justify-center py-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="flex">
-                <div className="max-w-sm bg-[#FEFEFE] border-2 border-[#282828] shadow-lg overflow-hidden hover:shadow-xl transition">
+                <div className="max-w-sm bg-[#FEFEFE] border-3 border-[#4B3832] shadow-lg overflow-hidden hover:shadow-xl transition">
                     <img
-                        src="https://picsum.photos/200/300"
+                        src="https://picsum.photos/100/300/"
                         alt="Coffee"
-                        className="w-full h-90 mx-auto object-cover"
+                        className="w-full h-90 mx-auto object-fill"
                     />
                     <div className="p-4">
                         <h3 className="text-xl font-semibold text-[#4B3832]">Espresso</h3>
