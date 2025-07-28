@@ -14,21 +14,22 @@ export default function Navbar() {
         }
         if (isSearch) {
             document.addEventListener('mousedown', handleClickOutside);
-        }
+
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
         }
+    }
     }, [isSearch])
 
     return (
         <>
-            <nav className="fixed w-full z-50 px-4 py-2 bg-transparent lg:px-2 lg:py-3  playfair-display-h1">
+            <nav className="fixed w-full px-4 py-2 z-50 bg-[#FEFEFE] lg:px-2 lg:py-3  playfair-display-h1">
                 <div className="container flex flex-wrap mx-auto items-center justify-between mt-4 mb-4 ">
-                    <a href="#" className="mr-10 text-[#EEEFE0] block py-1.5 text-2xl font-semibold">
+                    <a href="#" className="mr-10 text-[#282828] block py-1.5 text-2xl font-semibold">
                         Caffè Noire
                     </a>
                     <button
-                        className="lg:hidden text-[#EEEFE0] focus:outline-none"
+                        className="lg:hidden text-[#282828] focus:outline-none"
                         onClick={() => {
                             setIsHam(!isHam)
                             setIsSearch(false);
@@ -56,38 +57,38 @@ export default function Navbar() {
                                 e.preventDefault();
                                 setIsSearch(prev => !prev);
                             }}
-                            className="text-[#EEEFE0] items-center text-md hover:underline transition bg-transparent border-none"
+                            className="text-[#282828] items-center text-md hover:underline transition bg-transparent border-none"
                         >
                             Search
                         </button>
-                        <a href="/cart" className="text-[#EEEFE0] items-center text-md hover:underline transition">Beans</a>
-                        <a href="/cart" className="text-[#EEEFE0] items-center text-md hover:underline transition">Cart</a>
-                        <a href="/login" className="text-[#EEEFE0] items-center text-md hover:underline transition">Login</a>
-                        <a href="/register" className="text-[#EEEFE0] items-center text-md hover:underline transition">Register</a>
+                        <a href="/cart" className="text-[#282828] items-center text-md hover:underline transition">Beans</a>
+                        <a href="/cart" className="text-[#282828] items-center text-md hover:underline transition">Cart</a>
+                        <a href="/login" className="text-[#282828] items-center text-md hover:underline transition">Login</a>
+                        <a href="/register" className="text-[#282828] items-center text-md hover:underline transition">Register</a>
                     </div>
                 </div>
             </nav>
 
             {/* Hamburger DropDown */}
-            <div className={`absolute top-[80px] w-full playfair-display-h1 lg:hidden bg-[#EEEFE0] transition-all duration-600 overflow-hidden ${isHam ? 'h-[calc(100vh-80px)] py-0' : 'max-h-0 py-0'}`}>
-                <div className="flex flex-col justify-evenly h-full px-4">
+            <div className={`absolute z-20 top-[80px] w-full playfair-display-h1 lg:hidden bg-[#282828] transition-all duration-600 overflow-hidden ${isHam ? 'h-[calc(100vh-80px)] py-0' : 'max-h-0 py-0'}`}>
+                <div className="flex flex-col justify-evenly h-full px-8">
                     <a href='#'
                         onClick={() => {
                             setIsHam(false);
                             setIsSearch(!isSearch);
-                        }} className="text-[#4B3832] text-5xl hover:underline">
+                        }} className="text-[#FEFEFE] text-5xl hover:underline">
                         Search
                     </a>
-                    <a href="#" className="text-[#4B3832] text-5xl hover:underline">
+                    <a href="#" className="text-[#FEFEFE] text-5xl hover:underline">
                         Beans
                     </a>
-                    <a href="#" className="text-[#4B3832] text-5xl hover:underline">
+                    <a href="#" className="text-[#FEFEFE] text-5xl hover:underline">
                         Cart
                     </a>
-                    <a href="#" className="text-[#4B3832] text-5xl hover:underline">
+                    <a href="#" className="text-[#FEFEFE] text-5xl hover:underline">
                         Login
                     </a>
-                    <a href="#" className="text-[#4B3832] text-5xl hover:underline">
+                    <a href="#" className="text-[#FEFEFE] text-5xl hover:underline">
                         Register
                     </a>
                 </div>
@@ -96,12 +97,12 @@ export default function Navbar() {
             {/* SearchBar Drop Down */}
             <div
                 ref={searchRef}
-                className={`fixed top-[88px] w-full bg-transparent transition-all duration-300 overflow-hidden ${isSearch ? 'max-h-40 py-8' : 'max-h-0 py-0'}`}>
+                className={`absolute top-[88px] z-40 w-full bg-transparent transition-all duration-300 overflow-hidden ${isSearch ? 'max-h-40 py-8' : 'max-h-0 py-0'}`}>
                 <div className="px-4 flex justify-center">
-                    <div className="playfair-display-h1 flex items-center w-full mx-auto max-w-screen-2xl bg-[#EEEFE0] rounded-sm shadow-md px-4 py-3">
+                    <div className="playfair-display-h1 flex items-center w-full mx-auto max-w-screen-2xl bg-[#FEFEFE] rounded-sm shadow-md px-4 py-3">
                         <input type="text"
                             placeholder="Search..."
-                            className="flex-1 bg-transparent text-[#4B3832] placeholder:text-[#4B3832] text-2xl px-2 py-2 focus:outline-none" />
+                            className="flex-1 bg-transparent text-[#282828] placeholder:text-[#282828] text-2xl px-2 py-2 focus:outline-none" />
                     </div>
                 </div>
             </div>
