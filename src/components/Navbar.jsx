@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="fixed w-full px-4 py-2 z-50 bg-[#FEFEFE] lg:px-2 lg:py-3  playfair-display-h1">
+            <nav className="fixed w-full py-2 px-4 z-50 bg-[#FEFEFE] playfair-display-h1">
                 <div className="container flex flex-wrap mx-auto items-center justify-between mt-4 mb-4 ">
                     <a href="#" className="mr-10 text-[#282828] block py-1.5 text-2xl font-semibold">
                         Caffè Noire
@@ -97,7 +97,7 @@ export default function Navbar() {
             {/* SearchBar Drop Down */}
             <div
                 ref={searchRef}
-                className={`absolute top-[88px] z-40 w-full bg-transparent transition-all duration-300 overflow-hidden ${isSearch ? 'max-h-40 py-8' : 'max-h-0 py-0'}`}>
+                className={`fixed top-[88px] z-40 w-full bg-transparent transition-all duration-300 overflow-hidden ${isSearch ? 'max-h-40 py-8' : 'max-h-0 py-0'}`}>
                 <div className="px-4 flex justify-center">
                     <div className="playfair-display-h1 flex items-center w-full mx-auto max-w-screen-2xl bg-[#FEFEFE] rounded-sm shadow-md px-4 py-3">
                         <input type="text"
