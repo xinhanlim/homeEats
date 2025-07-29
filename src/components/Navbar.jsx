@@ -70,7 +70,7 @@ export default function Navbar() {
             </nav>
 
             {/* Hamburger DropDown */}
-            <div className={`fixed z-20 top-[80px] w-full playfair-display-h1 lg:hidden bg-[#FEFEFE]/80 backdrop-blur-lg transition-all duration-600 overflow-hidden ${isHam ? 'h-[calc(100vh-80px)] py-0' : 'max-h-0 py-0'}`}>
+            <div className={`fixed z-20 top-[80px] w-full playfair-display-h1 lg:hidden bg-[#FEFEFE] transition-all duration-600 overflow-hidden ${isHam ? 'h-[calc(100vh-80px)] py-0' : 'max-h-0 py-0'}`}>
                 <div className="flex flex-col justify-evenly h-full px-8">
                     <a href='#'
                         onClick={() => {
