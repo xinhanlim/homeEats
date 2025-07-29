@@ -6,6 +6,9 @@ export default function FeaturedSection() {
             <FeaturedCard />
             <FeaturedCard />
             <FeaturedCard />
+            <FeaturedCard />
+            <FeaturedCard />
+            <FeaturedCard />
         </div>
     )
 }
