@@ -27,7 +27,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className="fixed w-full py-2 px-4 z-50 bg-[#FEFEFE]/80 backdrop-blur-lg playfair-display-h1">
+            <nav className="fixed w-full py-2 px-4 z-50 bg-[#FAF9F6]/80 backdrop-blur-lg playfair-display-h1">
                 <div className="container text-[#4B3832] flex flex-wrap mx-auto items-center justify-between mt-4 mb-4 ">
                     <Link href="/" className="mr-10 block py-1.5 text-2xl font-semibold">
                         Caffè Noire
@@ -74,7 +74,7 @@ export default function Navbar() {
             </nav>
 
             {/* Hamburger DropDown */}
-            <div className={`fixed z-20 top-[80px] w-full playfair-display-h1 lg:hidden bg-[#FEFEFE] transition-all duration-600 overflow-hidden ${isHam ? 'h-[calc(100vh-80px)] py-0' : 'max-h-0 py-0'}`}>
+            <div className={`fixed z-20 top-[80px] w-full playfair-display-h1 lg:hidden bg-[#FAF9F6] transition-all duration-600 overflow-hidden ${isHam ? 'h-[calc(100vh-80px)] py-0' : 'max-h-0 py-0'}`}>
                 <div className="flex flex-col justify-evenly h-full px-8">
                     <a href='#'
                         onClick={() => {
@@ -103,7 +103,7 @@ export default function Navbar() {
                 ref={searchRef}
                 className={`fixed top-[88px] z-40 w-full bg-transparent transition-all duration-300 overflow-hidden ${isSearch ? 'max-h-40 py-8' : 'max-h-0 py-0'}`}>
                 <div className="px-4 flex justify-center">
-                    <div className="playfair-display-h1 flex items-center border-2 border-[#4B3832] w-full mx-auto max-w-screen-2xl bg-[#FEFEFE] rounded-sm shadow-md px-4 py-3">
+                    <div className="playfair-display-h1 flex items-center border-2 border-[#4B3832] w-full mx-auto max-w-screen-2xl bg-[#FAF9F6] rounded-sm shadow-md px-4 py-3">
                         <input type="text"
                             placeholder="Search..."
                             className="flex-1 bg-transparent text-[#4B3832] placeholder:text-[#4B3832] text-2xl px-2 py-2 focus:outline-none" />
