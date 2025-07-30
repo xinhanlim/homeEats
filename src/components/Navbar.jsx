@@ -1,6 +1,10 @@
 import { useEffect, useState, useRef } from 'react';
+import { Link, useLocation } from 'wouter';
+
 
 export default function Navbar() {
+
+    const [location] = useLocation();
 
     const [isHam, setIsHam] = useState(false);
     const [isSearch, setIsSearch] = useState(false);
@@ -24,12 +28,12 @@ export default function Navbar() {
     return (
         <>
             <nav className="fixed w-full py-2 px-4 z-50 bg-[#FEFEFE]/80 backdrop-blur-lg playfair-display-h1">
-                <div className="container flex flex-wrap mx-auto items-center justify-between mt-4 mb-4 ">
-                    <a href="#" className="mr-10 text-[#4B3832] block py-1.5 text-2xl font-semibold">
+                <div className="container text-[#4B3832] flex flex-wrap mx-auto items-center justify-between mt-4 mb-4 ">
+                    <Link href="/" className="mr-10 block py-1.5 text-2xl font-semibold">
                         Caffè Noire
-                    </a>
+                    </Link>
                     <button
-                        className="lg:hidden text-[#4B3832] focus:outline-none"
+                        className="lg:hidden focus:outline-none"
                         onClick={() => {
                             setIsHam(!isHam)
                             setIsSearch(false);
@@ -57,14 +61,14 @@ export default function Navbar() {
                                 e.preventDefault();
                                 setIsSearch(prev => !prev);
                             }}
-                            className="text-[#4B3832] items-center text-md hover:underline transition bg-transparent border-none"
+                            className="items-center text-md hover:underline transition bg-transparent border-none"
                         >
                             Search
                         </button>
-                        <a href="/cart" className="text-[#4B3832] items-center text-md hover:underline transition">Beans</a>
-                        <a href="/cart" className="text-[#4B3832] items-center text-md hover:underline transition">Cart</a>
-                        <a href="/login" className="text-[#4B3832] items-center text-md hover:underline transition">Login</a>
-                        <a href="/register" className="text-[#4B3832] items-center text-md hover:underline transition">Register</a>
+                        <Link href="/cart" className=" items-center text-md hover:underline transition">Beans</Link>
+                        <Link href="/cart" className="items-center text-md hover:underline transition">Cart</Link>
+                        <Link href="/login" className="items-center text-md hover:underline transition">Login</Link>
+                        <Link href="/register" className=" items-center text-md hover:underline transition">Register</Link>
                     </div>
                 </div>
             </nav>
@@ -79,18 +83,18 @@ export default function Navbar() {
                         }} className="text-[#4B3832] text-5xl hover:underline">
                         Search
                     </a>
-                    <a href="#" className="text-[#4B3832] text-5xl hover:underline">
+                    <Link href="#" className="text-[#4B3832] text-5xl hover:underline">
                         Beans
-                    </a>
-                    <a href="#" className="text-[#4B3832] text-5xl hover:underline">
+                    </Link>
+                    <Link href="#" className="text-[#4B3832] text-5xl hover:underline">
                         Cart
-                    </a>
-                    <a href="#" className="text-[#4B3832] text-5xl hover:underline">
+                    </Link>
+                    <Link href="#" className="text-[#4B3832] text-5xl hover:underline">
                         Login
-                    </a>
-                    <a href="#" className="text-[#4B3832] text-5xl hover:underline">
+                    </Link>
+                    <Link href="#" className="text-[#4B3832] text-5xl hover:underline">
                         Register
-                    </a>
+                    </Link>
                 </div>
             </div>
 

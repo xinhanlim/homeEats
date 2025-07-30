@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "name": "RICH - BOLD - TROPICA ESPRESSO",
+      "price": 12.99,
+      "image": "https://picsum.photos/id/425/500/800/"
+    },
+    {
+      "id": 2,
+      "name": "ROAST - LIGHT - ETHIOPIAN",
+      "price": 14.50,
+      "image": "https://picsum.photos/id/425/500/800/"
+    },
+    {
+      "id": 3,
+      "name": "ROAST - MEDIUM - BRAZILIAN",
+      "price": 11.75,
+      "image": "https://picsum.photos/id/425/500/800/"
+    }
+  ]

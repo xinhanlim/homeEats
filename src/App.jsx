@@ -1,6 +1,6 @@
-import FeaturedSection from './components/FeaturedSection'
-import HeroSection from './components/HeroSection'
 import Navbar from './components/Navbar'
+import Homepage from './components/Homepage'
+import {Route,Switch} from 'wouter'
 
 export default function App(){
   
@@ -8,8 +8,9 @@ export default function App(){
   <>
 
     <Navbar/>
-    <HeroSection/>
-    <FeaturedSection/>
+    <Switch>
+      <Route path='/' component={Homepage}/>
+    </Switch>
   
   </>
   )
