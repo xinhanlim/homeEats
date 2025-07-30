@@ -32,7 +32,7 @@ export default function FeaturedSection() {
 
     return (
         <div className="bg-[#FAF9F6]">
-            <div className="justify-center mx-auto pb-36 max-w-[1536px] gap-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <div className="justify-center mx-auto pb-36 px-4 max-w-[1536px] gap-8 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                 {renderFeatureProducts()}
             </div>
         </div>
